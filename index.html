@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alterfy — YouTube'dan müzik, Spotify hissiyle</title>
+<meta name="description" content="Alterfy, YouTube üzerinden müzik dinleme deneyimini masaüstüne taşıyan, Spotify estetiğine sahip, hafif ve yüksek performanslı bir müzik çalar.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Alterfy logosu" class="brand-logo">
+      <span class="brand-name">Alterfy</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#gorseller">Görseller</a>
+      <a href="#kurulum">Kurulum</a>
+      <a href="#indir" class="nav-cta">İndir</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">Masaüstü müzik çalar</p>
+      <h1>YouTube'daki her şarkı,<br>Spotify'ın rahatlığında.</h1>
+      <p class="hero-sub">
+        Alterfy; <code>yt-dlp</code> ile milyonlarca parçaya erişen, <code>VLC</code> motoruyla
+        kristal netliğinde ses veren, hafif ve hızlı bir Python uygulamasıdır.
+      </p>
+      <div class="hero-actions">
+        <a href="#indir" class="btn btn-primary">Alterfy'ı indir</a>
+        <a href="https://github.com/7yokki/alterfy" class="btn btn-ghost" id="repo-link" target="_blank" rel="noopener">GitHub'da görüntüle</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/logo.png" alt="Alterfy uygulama simgesi" class="hero-logo">
+    </div>
+  </section>
+
+  <section class="notices wrap" id="bildirimler">
+    <h2>Duyurular</h2>
+    <div id="notice-list" class="notice-list">
+      <p class="notice-empty">Duyurular yükleniyor…</p>
+    </div>
+  </section>
+
+  <section class="features wrap" id="ozellikler">
+    <h2>Neler sunuyor</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Modern arayüz</h3>
+        <p>Yuvarlatılmış köşeler ve karanlık mod ile Spotify hissiyatında sade bir tasarım.</p>
+      </div>
+      <div class="feature">
+        <h3>Gelişmiş arama</h3>
+        <p>Sanatçı, albüm veya parça adına göre anlık YouTube araması.</p>
+      </div>
+      <div class="feature">
+        <h3>Asenkron mimari</h3>
+        <p>Arama ve yükleme arka planda çalışır; arayüz hiçbir zaman kilitlenmez.</p>
+      </div>
+      <div class="feature">
+        <h3>Yerel kütüphane</h3>
+        <p>Kendi çalma listelerini oluştur, favori parçalarını yönet.</p>
+      </div>
+      <div class="feature">
+        <h3>Global kısayollar</h3>
+        <p>Uygulama arka plandayken bile klavyeden oynatmayı kontrol et.</p>
+      </div>
+      <div class="feature">
+        <h3>Çoklu dil desteği</h3>
+        <p>Yerelleştirilmiş arayüz metinleri ile farklı dillerde kullanım.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="shots wrap" id="gorseller">
+    <h2>Uygulamadan görüntüler</h2>
+    <div class="shot-grid">
+      <figure>
+        <img src="https://raw.githubusercontent.com/7yokki/alterfy/main/home.png" alt="Alterfy ana sayfa ve keşfet ekranı" loading="lazy">
+        <figcaption>Ana sayfa &amp; keşfet</figcaption>
+      </figure>
+      <figure>
+        <img src="https://raw.githubusercontent.com/7yokki/alterfy/main/playlist.png" alt="Alterfy çalma listesi görünümü" loading="lazy">
+        <figcaption>Çalma listesi görünümü</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="setup wrap" id="kurulum">
+    <h2>Kurulum</h2>
+    <div class="setup-grid">
+      <div class="setup-reqs">
+        <h3>Gereksinimler</h3>
+        <ul>
+          <li>Python 3.10+</li>
+          <li>VLC Media Player (PATH'e eklenmiş olmalı)</li>
+        </ul>
+      </div>
+      <div class="setup-steps">
+        <h3>Adımlar</h3>
+        <pre><code>git clone https://github.com/7yokki/alterfy.git
+cd alterfy
+pip install -r requirements.txt
+python main.py</code></pre>
+      </div>
+    </div>
+    <div class="stack">
+      <span>PyQt6</span><span>yt-dlp</span><span>python-vlc</span><span>requests</span><span>keyboard</span><span>pillow</span>
+    </div>
+  </section>
+
+  <section class="download wrap" id="indir">
+    <h2>İndir</h2>
+    <p class="download-sub">
+      Aşağıdaki buton, deponun <code>main</code> dalını GitHub API üzerinden anlık olarak ZIP'ler ve indirmeyi başlatır.
+      Kaynak kodu doğrudan GitHub'dan gelir, bu sitede saklanmaz.
+    </p>
+    <button id="download-btn" class="btn btn-primary btn-large">Kaynak kodu ZIP indir</button>
+    <p id="download-status" class="download-status" aria-live="polite"></p>
+    <p class="download-alt">
+      İndirme başlamazsa <a id="fallback-link" href="https://github.com/7yokki/alterfy" target="_blank" rel="noopener">depoyu doğrudan GitHub'da açabilirsiniz</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>Alterfy — Alternative for music, but alterfied.</p>
+    <p class="footer-links">
+      <a href="https://github.com/7yokki/alterfy" id="footer-repo" target="_blank" rel="noopener">Depo</a>
+      <a href="https://github.com/7yokki/alterfy/blob/main/LICENSE" id="footer-license" target="_blank" rel="noopener">Lisans</a>
+      <a href="https://github.com/7yokki/alterfy/issues" id="footer-issues" target="_blank" rel="noopener">Sorun bildir</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

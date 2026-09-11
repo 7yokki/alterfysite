@@ -1,0 +1,17 @@
+{
+  "repo_owner": "7yokki",
+  "repo_name": "alterfy",
+  "repo_branch": "main",
+  "repo_url": "https://github.com/7yokki/alterfy",
+  "repo_api_url": "https://api.github.com/repos/7yokki/alterfy",
+  "repo_zip_api_url": "https://api.github.com/repos/7yokki/alterfy/zipball/main",
+  "repo_codeload_zip_url": "https://codeload.github.com/7yokki/alterfy/zip/refs/heads/main",
+  "logo": "assets/logo.png",
+  "screenshots": {
+    "home": "https://raw.githubusercontent.com/7yokki/alterfy/main/home.png",
+    "playlist": "https://raw.githubusercontent.com/7yokki/alterfy/main/playlist.png"
+  },
+  "readme_url": "https://github.com/7yokki/alterfy/blob/main/README.md",
+  "license_url": "https://github.com/7yokki/alterfy/blob/main/LICENSE",
+  "issues_url": "https://github.com/7yokki/alterfy/issues"
+}
