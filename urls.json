@@ -13,5 +13,6 @@
   },
   "readme_url": "https://github.com/7yokki/alterfy/blob/main/README.md",
   "license_url": "https://github.com/7yokki/alterfy/blob/main/LICENSE",
-  "issues_url": "https://github.com/7yokki/alterfy/issues"
+  "issues_url": "https://github.com/7yokki/alterfy/issues",
+  "win64url": "https://github.com/7yokki/alterfy-win64/releases/download/v1.0.0/Alterfy.exe"
 }
