@@ -91,9 +91,8 @@
       btn.disabled = true;
       status.textContent = "İndirme bağlantısı urls.json içinde bulunamadı.";
     }
-  }
-    
-    // Windows 64-bit download button
+
+        // Windows 64-bit download button
     if (winbtn && win64Url) {
       winbtn.addEventListener("click", function () {
         status.textContent = "Windows 64-bit sürümü indiriliyor…";
@@ -115,6 +114,7 @@
     } else if (winbtn) {
       winbtn.disabled = true;
     }
+  }
 
   function renderNotifications(list) {
     var container = document.getElementById("notice-list");
