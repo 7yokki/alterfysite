@@ -61,10 +61,13 @@
       });
     }
 
-    // Download button
+    // Download buttons
     var btn = document.getElementById("download-btn");
+    var winbtn = document.getElementById("download-btn-win64");
     var status = document.getElementById("download-status");
+    
     var zipUrl = buildZipUrl(cfg);
+    var win64Url = cfg.win64url;
 
     if (btn && zipUrl) {
       btn.addEventListener("click", function () {
@@ -89,6 +92,29 @@
       status.textContent = "İndirme bağlantısı urls.json içinde bulunamadı.";
     }
   }
+    
+    // Windows 64-bit download button
+    if (winbtn && win64Url) {
+      winbtn.addEventListener("click", function () {
+        status.textContent = "Windows 64-bit sürümü indiriliyor…";
+        winbtn.disabled = true;
+    
+        var a = document.createElement("a");
+        a.href = win64Url;
+        a.rel = "noopener";
+        a.download = "";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+    
+        setTimeout(function () {
+          status.textContent = "İndirme başladıysa tarayıcınızın indirilenler klasörünü kontrol edin.";
+          winbtn.disabled = false;
+        }, 1200);
+      });
+    } else if (winbtn) {
+      winbtn.disabled = true;
+    }
 
   function renderNotifications(list) {
     var container = document.getElementById("notice-list");
