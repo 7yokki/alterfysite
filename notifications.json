@@ -1,7 +1,11 @@
 [
   {
-    "date": "2026-09-12",
+    "date": "2026-09-11",
     "title": "Alterfy sitesi yayında",
-    "description": "Alterfy'ı artık bu sayfadan indirebilirsiniz. İndirme, deponun en güncel main dalını otomatik olarak ZIP'ler."
+    "description": "Alterfy resmi sitesi kuruldu."
+  }
+  {
+    "date": "2026-09-12",
+    "title": "Alterfy, Windows için dışa bağımlı olmayan EXE build aldı. 64-Bit Windows platformu için çalışabilir halde.",
   }
 ]
