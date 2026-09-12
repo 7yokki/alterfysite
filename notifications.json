@@ -7,5 +7,6 @@
   {
     "date": "2026-09-12",
     "title": "Alterfy, Windows için dışa bağımlı olmayan EXE build aldı. 64-Bit Windows platformu için çalışabilir halde.",
+    "description": "Resmi build: https://github.com/7yokki/alterfy-win64/releases"
   }
 ]
